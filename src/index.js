@@ -59,6 +59,7 @@ server.on('connection', (socket) => {
 					},
 					tags: {
 						geohash: geohashed,
+						servername: process.env.SERVER_NAME || 'defadsdasdult',
 						username,
 						port,
 						ip,
